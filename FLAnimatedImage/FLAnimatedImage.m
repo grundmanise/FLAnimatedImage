@@ -25,7 +25,7 @@ const NSTimeInterval kFLAnimatedImageDelayTimeIntervalMinimum = 0.02;
 // An individual animated image's ideal memory footprint, used when calculating the number of frames to preload
 // Note this is per-instance and not across all FLAnimatedImages, it would probably be best if the 10MB memory footprint was shared across all instances
 // (Meaning if you had 100 FLAnimatedImages the sum of their memory footprints / preloaded frames should not exceed 10MB)
-const CGFloat kFLAnimatedImageIdealMemoryFootprint = 30.0;
+const CGFloat kFLAnimatedImageIdealMemoryFootprint = 10.0;
 
 typedef NS_ENUM(NSUInteger, FLAnimatedImageFrameCacheSize) {
     FLAnimatedImageFrameCacheSizeNoLimit = 0,                // 0 means no specific limit
